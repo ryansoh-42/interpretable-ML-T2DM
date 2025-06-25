@@ -1,7 +1,7 @@
 # Interpretable Modeling for Type 2 Diabetes Risk Factors
 
 ## Project Overview
-This project explores the use of machine learning method to predict the risk of Type 2 Diabetes, and identifying key contributing factors using health survey data and lab data.
+This project explores the use of machine learning models to predict the risk of Type 2 Diabetes, and identifying key contributing factors using health survey data and lab data.
 
 **The objectives of this project includes the following:**
 1. Predict whether an individual has Type 2 Diabetes using clinical and lifestyle features, classifying them into one of the three categories - diabetic, borderline diabetic or not diabetic
@@ -19,6 +19,7 @@ This project explores the use of machine learning method to predict the risk of 
 7. High Density Lipoprotein (HDL) (mmol/L)
 8. Current smoking frequency
 9. Diabetic (target variable y)
+n.b. There are other variables that can influence a model's prediction. This will be further explored in the report later on how these features have been chosen.
 
 **Dataset used:**
 - All data used were contributed by the Centers for Disease Control and Prevention. The specific datasets used for model training and evaluation are from the NHANES August 2021 to August 2023 database.
@@ -30,28 +31,30 @@ interpretable-ML-T2DM/
 │
 ├── data/                      # All data goes here (ignored in Git)
 │   ├── raw/                   # Raw dataset files (not committed)
-│   └── processed/             # Cleaned, merged datasets (ready for modeling)
+│   ├── interim/               # Cleaned, merged datasets (ready for EDA)
+│   ├── processed/             # Pre-processed datasets (ready for model training)
+│   └── results/               # Stored results from model training (ready for comparison)
 │
-├── notebooks/                # All research + analysis notebooks
-│   ├── 01_data_overview.ipynb
-│   ├── 02_cleaning_merging.ipynb
+├── notebooks/                 # All research + analysis notebooks
+│   ├── 01_data_cleaning.ipynb
+│   ├── 02_eda.ipynb
 |   ├── 03_preprocessing.ipynb
 │   ├── 04_model_training.ipynb
-│   ├── 05_shap_interpretability.ipynb
-│   └── 06_results_summary.ipynb
+│   ├── 05_interpretability.ipynb
+│   └── 06_results_comparison.ipynb
 │
-├── src/                      # Modular scripts
-│   ├── config.py             # Constants for paths, variable names
-│   ├── preprocess.py         # Data cleaning and merging
-│   ├── model.py              # Training and evaluation functions
-│   └── explain.py            # SHAP/LIME interpretation code
+├── src/                       # Modular scripts
+│   ├── config.py              # Constants for paths, variable names
+│   ├── preprocess.py          # Data cleaning and merging
+│   ├── model.py               # Training and evaluation functions
+│   └── explain.py             # SHAP interpretation code
 │
-├── report/                   # Paper-style results
+├── report/                    # Paper-style results
 │   └── summary_findings.pdf
 │
-├── requirements.txt          # Python packages
-├── .gitignore                # Prevent committing data and artifacts
-└── README.md                 # Project overview and instructions
+├── requirements.txt           # Python packages
+├── .gitignore                 # Prevent committing data and artifacts
+└── README.md                  # Project overview and instructions
 ```
 
 ## Setup Instructions
