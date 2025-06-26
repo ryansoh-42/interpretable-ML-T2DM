@@ -19,7 +19,7 @@ This project explores the use of machine learning models to predict the risk of 
 7. High Density Lipoprotein (HDL) (mmol/L)
 8. Current smoking frequency
 9. Diabetic (target variable y)
-n.b. There are other variables that can influence a model's prediction. This will be further explored in the report later on how these features have been chosen.
+n.b. There are other variables that can influence a model's prediction.
 
 **Dataset used:**
 - All data used were contributed by the Centers for Disease Control and Prevention. The specific datasets used for model training and evaluation are from the NHANES August 2021 to August 2023 database.
@@ -36,7 +36,7 @@ interpretable-ML-T2DM/
 │   └── results/               # Stored results from model training (ready for comparison)
 │
 ├── notebooks/                 # All research + analysis notebooks
-│   ├── 01_data_cleaning.ipynb
+│   ├── 01_data_cleaning_merge.ipynb
 │   ├── 02_eda.ipynb
 |   ├── 03_preprocessing.ipynb
 │   ├── 04_model_training.ipynb
