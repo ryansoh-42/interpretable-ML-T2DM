@@ -35,6 +35,16 @@ interpretable-ML-T2DM/
 │   ├── processed/             # Pre-processed datasets (ready for model training)
 │   └── results/               # Stored results from model training (ready for comparison)
 │
+├── models/                    # All built models in 04_model_training.ipynb are saved here for analysis in 05_interpretability.ipynb
+│   ├── adaboost_model.pkl
+│   ├── decision_tree_model.pkl
+│   ├── k-nearest_neighbors_model.pkl
+│   ├── logistic_regression_model.pkl
+│   ├── neural_network.keras
+│   ├── random_forest_model.pkl
+│   ├── support_vector_machine_model.pkl
+│   └── xgboost_model.pkl
+│
 ├── notebooks/                 # All research + analysis notebooks
 │   ├── 01_data_cleaning_merge.ipynb
 │   ├── 02_eda.ipynb
