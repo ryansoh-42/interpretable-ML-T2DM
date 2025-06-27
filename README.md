@@ -4,9 +4,9 @@
 This project explores the use of machine learning models to predict the risk of Type 2 Diabetes, and identifying key contributing factors using health survey data and lab data.
 
 **The objectives of this project includes the following:**
-1. Predict whether an individual has Type 2 Diabetes using clinical and lifestyle features, classifying them into one of the three categories - diabetic, borderline diabetic or not diabetic
+1. Predict whether an individual has Type 2 Diabetes using clinical and lifestyle features, classifying them into one of the three categories - diabetic, non-diabetic or borderline diabetic
 2. Identify the important risk factors of Type 2 Diabetes using explainable machine learning
-3. Identify the presence of an ensemble of machine learning models that can significantly improve metric scores, compared to using individual models standalone
+3. Identify the presence of an ensemble of machine learning models that can significantly improve metric scores, compared to using standalone models
 4. Provide a reproducible pipeline for public health research
 
 **Important features used for prediction:**
