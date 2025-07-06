@@ -66,13 +66,21 @@ interpretable-ML-T2DM/
 **Clone the repository**
 ``
 git clone https://github.com/ryansoh-42/interpretable-ML-T2DM.git
+``
+``
 cd interpretable-ML-T2DM
 ``
 
 **Create and activate virtual environment**
+``
 python3 -m venv venv
+``
+``
 source venv\Scripts\activate # On Windows
+``
+``
 source venv/bin/activate # On MacOS
+``
 
 **Install dependencies**
 pip install -r requirements.txt
