@@ -28,7 +28,7 @@ n.b. There are other variables that can influence a model's prediction.
 ```
 interpretable-ML-T2DM/
 │
-├── data/                      # All data goes here (ignored in Git)
+├── data/                      # All data goes here
 │   ├── raw/                   # Raw dataset files (not committed)
 │   ├── interim/               # Cleaned, merged datasets (ready for EDA)
 │   ├── processed/             # Pre-processed datasets (ready for model training)
@@ -81,9 +81,14 @@ source venv/bin/activate # On MacOS
 pip install -r requirements.txt
 ```
 
-**Dataset Access**
+### Run notebooks
+Open the notebooks in numerical order and run them sequentially.
+
+### Dataset Access
 Please download the required datasets highlighted above from CDC NHANES website. You may find them here (https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Examination&Cycle=2021-2023)
 
 ## License and Attribution
 This project uses publicly available datasets from the CDC NHANES survey and is intended solely for educational and research purposes.
 Data source :  https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Examination&Cycle=2021-2023
+
+If you have any questions or suggestions to make, please feel free to contact the author.
