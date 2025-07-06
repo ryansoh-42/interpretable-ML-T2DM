@@ -6,7 +6,7 @@ This project explores the use of machine learning models to predict the risk of 
 **The objectives of this project includes the following:**
 1. Predict whether an individual has Type 2 Diabetes using clinical and lifestyle features, classifying them into one of the three categories - diabetic, non-diabetic or borderline diabetic
 2. Identify the important risk factors of Type 2 Diabetes using explainable machine learning
-3. Identify the presence of an ensemble of machine learning models that can significantly improve metric scores, compared to using standalone models
+3. Assess whether an ensemble of machine learning models can significantly improve metric scores, compared to using standalone models
 
 **Important features used for prediction:**
 1. BMI
@@ -34,7 +34,7 @@ interpretable-ML-T2DM/
 │   ├── processed/             # Pre-processed datasets (ready for model training)
 │   └── results/               # Stored results from model training (ready for comparison)
 │
-├── models/                    # All built models in 04_model_training.ipynb are saved here for analysis in 05_interpretability.ipynb
+├── models/                    # All built models in 04_model_training.ipynb are saved here for analysis in the later notebooks
 │   ├── adaboost_model.pkl
 │   ├── decision_tree_model.pkl
 │   ├── k-nearest_neighbors_model.pkl
@@ -44,7 +44,7 @@ interpretable-ML-T2DM/
 │   ├── support_vector_machine_model.pkl
 │   └── xgboost_model.pkl
 │
-├── notebooks/                 # All research + analysis notebooks
+├── notebooks/                 # End-to-end analysis pipeline
 │   ├── 01_data_cleaning_merge.ipynb
 │   ├── 02_eda.ipynb
 |   ├── 03_preprocessing.ipynb
@@ -53,8 +53,9 @@ interpretable-ML-T2DM/
 │   ├── 06_results_comparison.ipynb
 │   └── 07_stacked_ensemble.ipynb
 │
-├── report/                    # Paper-style report
-│   └── report.pdf
+├── report/                    
+│   ├── figures/               # All plot visualisations
+│   └── report.pdf             # Paper-style report
 │
 ├── requirements.txt           # Python packages
 ├── .gitignore                 # Prevent committing data and artifacts
@@ -62,6 +63,21 @@ interpretable-ML-T2DM/
 ```
 
 ## Setup Instructions
+**Clone the repository**
+git clone https://github.com/ryansoh-42/interpretable-ML-T2DM.git
+cd interpretable-ML-T2DM
 
+**Create and activate virtual environment**
+python3 -m venv venv
+source venv\Scripts\activate # On Windows
+source venv/bin/activate # On MacOS
+
+**Install dependencies**
+pip install -r requirements.txt
+
+**Dataset Access**
+Please download the required datasets highlighted above from CDC NHANES website. You may find them here (https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Examination&Cycle=2021-2023)
 
 ## License and Attribution
+This project uses publicly available datasets from the CDC NHANES survey and is intended solely for educational and research purposes.
+Data source :  https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Examination&Cycle=2021-2023
