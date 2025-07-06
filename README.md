@@ -63,27 +63,23 @@ interpretable-ML-T2DM/
 ```
 
 ## Setup Instructions
-**Clone the repository**
-``
+### Clone the repository
+```bash
 git clone https://github.com/ryansoh-42/interpretable-ML-T2DM.git
-``
-``
 cd interpretable-ML-T2DM
-``
+```
 
-**Create and activate virtual environment**
-``
+### Create and activate virtual environment
+```bash
 python3 -m venv venv
-``
-``
 source venv\Scripts\activate # On Windows
-``
-``
 source venv/bin/activate # On MacOS
-``
+```
 
-**Install dependencies**
+### Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
 **Dataset Access**
 Please download the required datasets highlighted above from CDC NHANES website. You may find them here (https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Examination&Cycle=2021-2023)
