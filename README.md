@@ -7,7 +7,6 @@ This project explores the use of machine learning models to predict the risk of 
 1. Predict whether an individual has Type 2 Diabetes using clinical and lifestyle features, classifying them into one of the three categories - diabetic, non-diabetic or borderline diabetic
 2. Identify the important risk factors of Type 2 Diabetes using explainable machine learning
 3. Identify the presence of an ensemble of machine learning models that can significantly improve metric scores, compared to using standalone models
-4. Provide a reproducible pipeline for public health research
 
 **Important features used for prediction:**
 1. BMI
@@ -51,16 +50,11 @@ interpretable-ML-T2DM/
 |   ├── 03_preprocessing.ipynb
 │   ├── 04_model_training.ipynb
 │   ├── 05_interpretability.ipynb
-│   └── 06_results_comparison.ipynb
+│   ├── 06_results_comparison.ipynb
+│   └── 07_stacked_ensemble.ipynb
 │
-├── src/                       # Modular scripts
-│   ├── config.py              # Constants for paths, variable names
-│   ├── preprocess.py          # Data cleaning and merging
-│   ├── model.py               # Training and evaluation functions
-│   └── explain.py             # SHAP interpretation code
-│
-├── report/                    # Paper-style results
-│   └── summary_findings.pdf
+├── report/                    # Paper-style report
+│   └── report.pdf
 │
 ├── requirements.txt           # Python packages
 ├── .gitignore                 # Prevent committing data and artifacts
